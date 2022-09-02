@@ -9,7 +9,7 @@ internal class Program
         Console.WriteLine("PLease Enter a Second Number");
         int NumberTwo = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine($"{NumberOne} + {NumberTwo} = {NumberOne + NumberTwo}");
-
+        //Question 2:
         Console.WriteLine("Question 2:");
         Console.WriteLine("Input a Number to Multiply");
         int Multiple = Convert.ToInt32(Console.ReadLine());
@@ -18,18 +18,15 @@ internal class Program
         {
             Console.WriteLine($"{Multiple} x {i} = {Multiple * i}");
         }
-
+        //Question 3 : min and max bit table
         Console.WriteLine("Question 3:");
-        ConsoleTable table = new ConsoleTable("Type", "Bytes(s)", "Min", "Max");
-        table.AddRow("sbyte", "byte", "short", "ushort", "int", "uint", "long", "ulong", "float", "double", "decimal");
-
+        ConsoleTable table = new("sbyte", "byte", "short", "ushort", "int", "uint", "long", "ulong", "float", "double", "decimal");
+        table.AddRow("Type", "Bytes(s)", "Min", "Max");
+     
+        //Question 4:calculator
         Console.WriteLine("Question 4:");
         while (Console.ReadLine() != "esc")
         {
-            Console.WriteLine("Please enter first number:");
-            double num1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("Please enter second number:");
-            double num2 = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Select Function: Add, Subtract,Multiply,Divide,Mod");
             string ans = Console.ReadLine();
             if (ans == "Add")
