@@ -84,7 +84,7 @@ internal class Program
                 Console.WriteLine($"{DivNum1} / {DivNum2} = {DivNum1 / DivNum2}");
                 Console.WriteLine("Please Press Enter");
             }
-            //may work may not
+            
             else if (ans == "Mod")
             {
                 Console.WriteLine("Please Enter a Number");
